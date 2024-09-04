@@ -8,6 +8,8 @@
 import SwiftUI
 struct ChatView: View {
     @ObservedObject var viewModel = ViewModel()
+    @State private var isTyping = false // For "typing..." feature
+    
     var body: some View {
         VStack {
             ScrollView {
@@ -15,10 +17,12 @@ struct ChatView: View {
                         id: \.id) { message in
                     messageView(message: message)
                 }
+                
+                
             }
             
             HStack {
-                TextField("Ender a message...", text: 
+                TextField("Enter a message...", text:
                     $viewModel.currentInput)
                 Button {
                     viewModel.sendMessage()

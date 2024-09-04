@@ -14,7 +14,6 @@
 		C64582DC2C88AC1700FD4C77 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64582D72C88AC1700FD4C77 /* ChatViewModel.swift */; };
 		C64582DE2C88AC1700FD4C77 /* OpenAiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64582D92C88AC1700FD4C77 /* OpenAiService.swift */; };
 		C64582DF2C88AC1700FD4C77 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64582DA2C88AC1700FD4C77 /* ChatView.swift */; };
-		C64582E02C88AC1700FD4C77 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64582DB2C88AC1700FD4C77 /* Constants.swift */; };
 		C64582E22C88BE5100FD4C77 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64582E12C88BE5100FD4C77 /* AuthView.swift */; };
 		C64582E42C88C63E00FD4C77 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64582E32C88C63E00FD4C77 /* AuthViewModel.swift */; };
 		C64582E62C88CF0700FD4C77 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64582E52C88CF0600FD4C77 /* AuthService.swift */; };
@@ -23,6 +22,10 @@
 		C64582EE2C88D2E200FD4C77 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C64582ED2C88D2E200FD4C77 /* FirebaseFirestore */; };
 		C64582F02C88D5AD00FD4C77 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64582EF2C88D5AD00FD4C77 /* AppState.swift */; };
 		C64582F22C88DB8500FD4C77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64582F12C88DB8500FD4C77 /* AppDelegate.swift */; };
+		C64582F42C88F39A00FD4C77 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64582F32C88F39A00FD4C77 /* Constants.swift */; };
+		C64582F72C88F63A00FD4C77 /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64582F62C88F63A00FD4C77 /* ChatListView.swift */; };
+		C64582F92C88F64900FD4C77 /* ChatListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64582F82C88F64900FD4C77 /* ChatListViewModel.swift */; };
+		C64582FD2C89070F00FD4C77 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64582FC2C89070F00FD4C77 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,13 +36,16 @@
 		C64582D72C88AC1700FD4C77 /* ChatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		C64582D92C88AC1700FD4C77 /* OpenAiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAiService.swift; sourceTree = "<group>"; };
 		C64582DA2C88AC1700FD4C77 /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
-		C64582DB2C88AC1700FD4C77 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C64582E12C88BE5100FD4C77 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		C64582E32C88C63E00FD4C77 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		C64582E52C88CF0600FD4C77 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		C64582E82C88D25200FD4C77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C64582EF2C88D5AD00FD4C77 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		C64582F12C88DB8500FD4C77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C64582F32C88F39A00FD4C77 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C64582F62C88F63A00FD4C77 /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
+		C64582F82C88F64900FD4C77 /* ChatListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewModel.swift; sourceTree = "<group>"; };
+		C64582FC2C89070F00FD4C77 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +83,13 @@
 			children = (
 				C64582E82C88D25200FD4C77 /* GoogleService-Info.plist */,
 				C64582C62C88ABDD00FD4C77 /* TestOut5App.swift */,
-				C64582DB2C88AC1700FD4C77 /* Constants.swift */,
+				C64582F32C88F39A00FD4C77 /* Constants.swift */,
 				C64582F12C88DB8500FD4C77 /* AppDelegate.swift */,
-				C64582DA2C88AC1700FD4C77 /* ChatView.swift */,
-				C64582D72C88AC1700FD4C77 /* ChatViewModel.swift */,
+				C64582FA2C8906E500FD4C77 /* Chat */,
 				C64582D92C88AC1700FD4C77 /* OpenAiService.swift */,
+				C64582FB2C8906F800FD4C77 /* Profile */,
 				C64582EF2C88D5AD00FD4C77 /* AppState.swift */,
+				C64582F52C88F62000FD4C77 /* ChatList */,
 				C64582E72C88CF1900FD4C77 /* Authentication */,
 				C64582CA2C88ABDE00FD4C77 /* Assets.xcassets */,
 				C64582CC2C88ABDE00FD4C77 /* Preview Content */,
@@ -106,6 +113,32 @@
 				C64582E52C88CF0600FD4C77 /* AuthService.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		C64582F52C88F62000FD4C77 /* ChatList */ = {
+			isa = PBXGroup;
+			children = (
+				C64582F62C88F63A00FD4C77 /* ChatListView.swift */,
+				C64582F82C88F64900FD4C77 /* ChatListViewModel.swift */,
+			);
+			path = ChatList;
+			sourceTree = "<group>";
+		};
+		C64582FA2C8906E500FD4C77 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				C64582D72C88AC1700FD4C77 /* ChatViewModel.swift */,
+				C64582DA2C88AC1700FD4C77 /* ChatView.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		C64582FB2C8906F800FD4C77 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C64582FC2C89070F00FD4C77 /* ProfileView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,12 +221,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C64582F72C88F63A00FD4C77 /* ChatListView.swift in Sources */,
+				C64582FD2C89070F00FD4C77 /* ProfileView.swift in Sources */,
 				C64582DE2C88AC1700FD4C77 /* OpenAiService.swift in Sources */,
 				C64582DC2C88AC1700FD4C77 /* ChatViewModel.swift in Sources */,
 				C64582E22C88BE5100FD4C77 /* AuthView.swift in Sources */,
 				C64582F02C88D5AD00FD4C77 /* AppState.swift in Sources */,
 				C64582E42C88C63E00FD4C77 /* AuthViewModel.swift in Sources */,
-				C64582E02C88AC1700FD4C77 /* Constants.swift in Sources */,
+				C64582F92C88F64900FD4C77 /* ChatListViewModel.swift in Sources */,
+				C64582F42C88F39A00FD4C77 /* Constants.swift in Sources */,
 				C64582DF2C88AC1700FD4C77 /* ChatView.swift in Sources */,
 				C64582C72C88ABDD00FD4C77 /* TestOut5App.swift in Sources */,
 				C64582F22C88DB8500FD4C77 /* AppDelegate.swift in Sources */,

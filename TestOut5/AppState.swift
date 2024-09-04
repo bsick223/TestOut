@@ -15,6 +15,7 @@ import Firebase
 class AppState: ObservableObject {
     @Published var currentUser: User?
     @Published var isLoading: Bool = true  // To show loading state
+    @Published var navigationPath = NavigationPath()
 
     var isLoggedin: Bool {
         return currentUser != nil

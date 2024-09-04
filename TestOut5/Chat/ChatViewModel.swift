@@ -6,6 +6,15 @@
 //
 
 import Foundation
+
+//class ChatViewModel {
+//    let chatId: String
+//    
+//    init(chatId: String) {
+//        self.chatId = chatId
+//    }
+//}
+
 extension ChatView {
     class ViewModel: ObservableObject {
         @Published var messages: [Message] = [Message(id: UUID(), role: .system, content: "“You are my study assistant. I’ll send you some content, and your job is to help me understand it better. Please create a test with three questions based on the content, asking one question at a time. Once I answer, provide my result along with feedback at the end.", createAt: Date() )]

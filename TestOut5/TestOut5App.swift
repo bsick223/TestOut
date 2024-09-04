@@ -34,6 +34,16 @@ struct TestOut5App: App {
     
     var body: some Scene {
         WindowGroup {
+//            if appState.isLoggedin {
+//                NavigationStack(path: $appState.navigationPath) {
+//                    ChatListView()
+//                        .environmentObject(appState)
+//                }
+//                } else {
+//                AuthView()
+//                    .environmentObject(appState)
+//            }
+            
             if appState.isLoading {
                 // Show a loading view while checking authentication status
                 ProgressView("Checking Authentication...")
@@ -43,6 +53,7 @@ struct TestOut5App: App {
                 AuthView()  // Show the login/create account view
                     .environmentObject(appState)
             }
+//            ChatListView()
         }
     }
 }
