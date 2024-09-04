@@ -14,7 +14,8 @@ class OpenAiService {
         
         let openAIMessages = messages.map({OpenAIChatMessage(role: $0.role, content: $0.content)})
         
-        let body = OpenAIChatBody(model: "gpt-3.5-turbo", messages: openAIMessages)
+                                        // "gpt-3.5-turbo"
+        let body = OpenAIChatBody(model: "gpt-4", messages: openAIMessages)
         let headers: HTTPHeaders = [
             "Authorization": "Bearer \(Constants.openAIApiKey)"
         ]

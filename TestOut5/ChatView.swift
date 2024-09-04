@@ -29,11 +29,14 @@ struct ChatView: View {
         }
         .padding()
     }
-    
+    // To-DO use stream or typing.. feature
     func messageView(message: Message) -> some View {
         HStack{
             if message.role == .user { Spacer()}
             Text(message.content)
+                .padding()
+                .background(message.role == .user ? Color.blue:
+                                Color.gray.opacity(0.2))
             if message.role == .assistant { Spacer()}
         }
     }
