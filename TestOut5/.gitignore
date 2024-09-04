@@ -1,2 +1,4 @@
 # Ignore Constants.swift
 Constants.swift
+
+GoogleService-Info.plist

@@ -15,6 +15,14 @@
 		C64582DE2C88AC1700FD4C77 /* OpenAiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64582D92C88AC1700FD4C77 /* OpenAiService.swift */; };
 		C64582DF2C88AC1700FD4C77 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64582DA2C88AC1700FD4C77 /* ChatView.swift */; };
 		C64582E02C88AC1700FD4C77 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64582DB2C88AC1700FD4C77 /* Constants.swift */; };
+		C64582E22C88BE5100FD4C77 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64582E12C88BE5100FD4C77 /* AuthView.swift */; };
+		C64582E42C88C63E00FD4C77 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64582E32C88C63E00FD4C77 /* AuthViewModel.swift */; };
+		C64582E62C88CF0700FD4C77 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64582E52C88CF0600FD4C77 /* AuthService.swift */; };
+		C64582E92C88D25200FD4C77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C64582E82C88D25200FD4C77 /* GoogleService-Info.plist */; };
+		C64582EC2C88D2E200FD4C77 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C64582EB2C88D2E200FD4C77 /* FirebaseAuth */; };
+		C64582EE2C88D2E200FD4C77 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C64582ED2C88D2E200FD4C77 /* FirebaseFirestore */; };
+		C64582F02C88D5AD00FD4C77 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64582EF2C88D5AD00FD4C77 /* AppState.swift */; };
+		C64582F22C88DB8500FD4C77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64582F12C88DB8500FD4C77 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,12 @@
 		C64582D92C88AC1700FD4C77 /* OpenAiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAiService.swift; sourceTree = "<group>"; };
 		C64582DA2C88AC1700FD4C77 /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		C64582DB2C88AC1700FD4C77 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C64582E12C88BE5100FD4C77 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		C64582E32C88C63E00FD4C77 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		C64582E52C88CF0600FD4C77 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		C64582E82C88D25200FD4C77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C64582EF2C88D5AD00FD4C77 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		C64582F12C88DB8500FD4C77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +48,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C64582D62C88ABFB00FD4C77 /* Alamofire in Frameworks */,
+				C64582EC2C88D2E200FD4C77 /* FirebaseAuth in Frameworks */,
+				C64582EE2C88D2E200FD4C77 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,11 +75,15 @@
 		C64582C52C88ABDD00FD4C77 /* TestOut5 */ = {
 			isa = PBXGroup;
 			children = (
+				C64582E82C88D25200FD4C77 /* GoogleService-Info.plist */,
 				C64582C62C88ABDD00FD4C77 /* TestOut5App.swift */,
 				C64582DB2C88AC1700FD4C77 /* Constants.swift */,
+				C64582F12C88DB8500FD4C77 /* AppDelegate.swift */,
 				C64582DA2C88AC1700FD4C77 /* ChatView.swift */,
 				C64582D72C88AC1700FD4C77 /* ChatViewModel.swift */,
 				C64582D92C88AC1700FD4C77 /* OpenAiService.swift */,
+				C64582EF2C88D5AD00FD4C77 /* AppState.swift */,
+				C64582E72C88CF1900FD4C77 /* Authentication */,
 				C64582CA2C88ABDE00FD4C77 /* Assets.xcassets */,
 				C64582CC2C88ABDE00FD4C77 /* Preview Content */,
 			);
@@ -76,6 +96,16 @@
 				C64582CD2C88ABDE00FD4C77 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C64582E72C88CF1900FD4C77 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				C64582E12C88BE5100FD4C77 /* AuthView.swift */,
+				C64582E32C88C63E00FD4C77 /* AuthViewModel.swift */,
+				C64582E52C88CF0600FD4C77 /* AuthService.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +126,8 @@
 			name = TestOut5;
 			packageProductDependencies = (
 				C64582D52C88ABFB00FD4C77 /* Alamofire */,
+				C64582EB2C88D2E200FD4C77 /* FirebaseAuth */,
+				C64582ED2C88D2E200FD4C77 /* FirebaseFirestore */,
 			);
 			productName = TestOut5;
 			productReference = C64582C32C88ABDD00FD4C77 /* TestOut5.app */;
@@ -127,6 +159,7 @@
 			mainGroup = C64582BA2C88ABDD00FD4C77;
 			packageReferences = (
 				C64582D42C88ABFB00FD4C77 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				C64582EA2C88D2E100FD4C77 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = C64582C42C88ABDD00FD4C77 /* Products */;
 			projectDirPath = "";
@@ -144,6 +177,7 @@
 			files = (
 				C64582CE2C88ABDE00FD4C77 /* Preview Assets.xcassets in Resources */,
 				C64582CB2C88ABDE00FD4C77 /* Assets.xcassets in Resources */,
+				C64582E92C88D25200FD4C77 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,9 +190,14 @@
 			files = (
 				C64582DE2C88AC1700FD4C77 /* OpenAiService.swift in Sources */,
 				C64582DC2C88AC1700FD4C77 /* ChatViewModel.swift in Sources */,
+				C64582E22C88BE5100FD4C77 /* AuthView.swift in Sources */,
+				C64582F02C88D5AD00FD4C77 /* AppState.swift in Sources */,
+				C64582E42C88C63E00FD4C77 /* AuthViewModel.swift in Sources */,
 				C64582E02C88AC1700FD4C77 /* Constants.swift in Sources */,
 				C64582DF2C88AC1700FD4C77 /* ChatView.swift in Sources */,
 				C64582C72C88ABDD00FD4C77 /* TestOut5App.swift in Sources */,
+				C64582F22C88DB8500FD4C77 /* AppDelegate.swift in Sources */,
+				C64582E62C88CF0700FD4C77 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +413,14 @@
 				version = 5.6.4;
 			};
 		};
+		C64582EA2C88D2E100FD4C77 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -381,6 +428,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C64582D42C88ABFB00FD4C77 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		C64582EB2C88D2E200FD4C77 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C64582EA2C88D2E100FD4C77 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		C64582ED2C88D2E200FD4C77 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C64582EA2C88D2E100FD4C77 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
